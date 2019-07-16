@@ -1,0 +1,15 @@
+{
+  "name": "OOP",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "eslint": "eslint --init",
+    "lint": "eslint ./src/*.js",
+    "lint:fix": "eslint ./src/**/*.js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-google": "^0.13.0"
+  }
+}
