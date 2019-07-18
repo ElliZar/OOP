@@ -1,0 +1,13 @@
+extends layout/baseAuth.pug
+
+block content
+    article.auth
+        div.container
+            h1.auth__text Sign In
+            form.auth__form(action="/login", method="post")
+                input.email(type="email", placeholder="name@email.com" name="email")
+                input.password(type="password" name="password",placeholder="Password")
+                div.auth__forgot
+                    a(href="#") Forgot password?
+                div.auth__submit
+                    button(type="submit") Sign in

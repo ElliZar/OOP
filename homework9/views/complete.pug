@@ -1,0 +1,24 @@
+extends layout/baseAuth.pug
+block content
+    article.auth
+        div.container
+            h1.auth__text Complete your account
+            form.auth__form(action="/complete" method="POST")
+                input.email#password(type="password" placeholder="Create password" name="createPassword")
+                .progress.d-none
+                    .div
+                    .div
+                    .div
+                input.password(type="password" placeholder="Confirm password" name="confirmPassword")
+                .auth__check
+                    input#check(type="checkbox" name="checkbox1")
+                    label(for="check") I agree to the myFixer.com
+                    a(href="###") Terms of Service
+                .auth__check
+                    input#check1(type="checkbox" name="checkbox2")
+                    label(for="check1") I agree to the myFixer.com
+                    a(href="###") Terms of Service
+                figure.recaptcha
+                div.auth__submit
+                    button(type="submit") Done
+    script(src="./javascript/complete.js")

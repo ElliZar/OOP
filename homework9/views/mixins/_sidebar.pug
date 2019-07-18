@@ -1,0 +1,37 @@
+- 
+    const sidebarItems = [
+        {
+            pathToImg: "../images/search.svg",
+            active: false,
+            link: ""
+        },
+        {
+            pathToImg: "../images/person.png",
+            active: true,
+            link: ""
+        },
+        {
+            pathToImg: "../images/messages.svg",
+            active: false,
+            link: "profile/chat"
+        },
+        {
+            pathToImg: "../images/callendar.svg",
+            active: false,
+            link: ""
+        }
+    ];
+
+mixin sidebar(item)
+    li.menu__item
+        a.menu__link(href= item.link)
+            img(src= item.pathToImg)
+            if (item.notification)
+                .ellipse
+                    p.ellipse__number 1
+            if (item.active)
+                img.line(src="./images/line.svg", alt="")
+
+each item in sidebarItems
+    +sidebar(item)
+

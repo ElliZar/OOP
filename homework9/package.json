@@ -1,0 +1,36 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "\"Koa server\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "eslint ./app.js ./routes/*.js ./controllers/*.js",
+    "lint:fix": "eslint ./app.js ./routes/*.js ./controllers/*.js --fix",
+    "scss": "node-sass -w ./static -o public/stylesheet/"
+  },
+  "repository": "https://github.com/ElliZar/OOP.git",
+  "author": "Yelyzar",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-njk": "^1.0.6",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "nunjucks": "^3.2.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "eslint": "^6.0.1",
+    "eslint-config-google": "^0.13.0",
+    "koa-node-sass": "^6.8.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}

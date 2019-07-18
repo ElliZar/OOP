@@ -1,0 +1,9 @@
+extends layout/baseAuth.pug
+block content
+    article.auth
+        div.container
+            h1.auth__text Enter your e-mail to reset your password
+            form.auth__form(method="POST" action="/email")
+                input.email(type="email", placeholder="name@email.com" name="email")
+                div.auth__submit
+                    button(type="submit") Send

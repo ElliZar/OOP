@@ -1,0 +1,24 @@
+extends layout/baseUser.pug
+
+block content
+    include partials/sidebar
+    section
+        include partials/header
+        article.messages
+            ul.messages__users.list
+                include ./mixins/_userMsgList.pug
+            .messages__chat
+                .search
+                    img(src="./img/Shape.svg", alt='')
+                    input.search__input(type='text', placeholder='Search messages...')
+                ul.dialog(data-simplebar)
+                    li.dialog__date
+                        p Today, 17.03.2018
+                    include ./mixins/_dialog.pug
+                .send
+                    textarea.send__input(type='text', placeholder='Write a message...')
+                    .send__img
+                        img(src="./img/smile.svg", alt='')
+                        img(src="./img/paperClip.svg", alt='')
+                        button.send__msg
+                            img(src="./img/send.svg", alt='')
