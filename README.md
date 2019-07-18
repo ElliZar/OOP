@@ -1,3 +1,4 @@
+# HOMEWORK 8
 # OOP
 It is homework number 8.
 I create index.html page and simple coffeemachine, so u can drink some coffee ;))
@@ -12,3 +13,6 @@ FIBONACHI
 FACTORIAL
 
 QuickSort
+
+
+# HOMEWORK 9
